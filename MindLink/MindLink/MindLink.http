@@ -1,0 +1,6 @@
+@MindLink_HostAddress = http://localhost:5042
+
+GET {{MindLink_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
