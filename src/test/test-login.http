@@ -1,0 +1,47 @@
+### signup new user
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+  "username": "h.youssef2323",
+  "email": "h.youssef2323@nu.edu.eg",
+  "password": "123456"
+}
+### login existing user
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "hajarmuhammad903@gmail.com",
+  "password": "123456"
+}
+### verify user email
+POST http://localhost:8080/auth/verify
+Content-Type: application/json
+
+{
+  "email": "h.youssef2323@nu.edu.eg",
+  "verificationCode": "115906"
+}
+
+###signup another user
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+  "username": "hajar",
+  "email": "hajarmuhammad903@gmail.com",
+  "password": "123456"
+}
+
+### create doctor as admin
+POST http://localhost:8080/admin/doctors
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJoLnlvdXNzZWYyMzIzQG51LmVkdS5lZyIsImlhdCI6MTc2NjkyNzA3NSwiZXhwIjoxNzY2OTMwNjc1fQ.BnX8uBGmBRL6z-_mdhwogi60b3S72ghzFxhdnsq7cOY
+
+{
+  "username": "dr.ahmed",
+  "email": "Ali@com",
+  "password": "123456",
+  "specialization": "cardiology"
+}
