@@ -1,5 +1,5 @@
 package com.mindlink.app.dto;
-
+import java.time.LocalDateTime;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,5 +11,6 @@ public class CreateDoctorDto {
     private String password;        // For User login
     private String name;            // Doctor full name
     private String specialty;
+    private LocalDateTime createdAt; // new field
     private Double consultationFee;
 }

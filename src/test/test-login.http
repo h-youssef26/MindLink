@@ -12,7 +12,7 @@ POST http://localhost:8080/auth/login
 Content-Type: application/json
 
 {
-  "email": "hajarmuhammad903@gmail.com",
+  "email": "h.youssef2323@nu.edu.eg",
   "password": "123456"
 }
 ### verify user email
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 {
   "email": "h.youssef2323@nu.edu.eg",
-  "verificationCode": "115906"
+  "verificationCode": "352593"
 }
 
 ###signup another user
